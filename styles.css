@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+#table-header {
+  color: blue;
+}
+
+#column-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.column { 
+  color: darkgreen;
+}
+
+.image-container {
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+#svg-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+circle {
+  opacity: 50%;
+}
+
+circle:hover {
+  stroke: blue;
+  stroke-width: 4px;
+  stroke-opacity: 100%;
+}
+
+rect {
+  fill: red;
+  outline: 4px solid black;
+}
+
+rect:hover {
+  fill:pink;
+}

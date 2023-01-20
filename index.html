@@ -1,14 +1,156 @@
 <!DOCTYPE html>
-<html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hw-02</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-    <meta charset=utf-8/>
-</head>
-
-
-<body>
-
-
-</body>
-
+  <body>
+    <div id="data-abstraction">
+      <div class="info">
+        <h1>Dataset Types</h1>
+        <table>
+          <tr id="table-header">
+            <th>Data</th>
+            <th>Link</th>
+            <th>Dataset Type</th>
+          </tr>
+          <tr>
+            <th>airports.csv</th>
+            <th><a href="./data//Airports.csv" target="_blank">Link</a></th>
+            <th>Geometry</th>
+          </tr>
+          <tr>
+            <th>Google-Web.txt</th>
+            <th><a href="./data/Google-Web.txt" target="_blank">Link</a></th>
+            <th>Network</th>
+          </tr>
+          <tr>
+            <th>UFO.csv</th>
+            <th><a href="./data/UFO.csv" target="_blank">Link</a></th>
+            <th>Table</th>
+          </tr>
+        </table>
+      </div>
+      <div class="info">
+        <h1>Data Types</h1>
+        <h2>Airports</h2>
+        <ul>
+          <li>Row datatype: Item</li>
+          <li>Name column: Attribute</li>
+          <ul>
+            <li>Attribute type: Categorical</li>
+          </ul>
+          <li>Longitude column: Position</li>
+          <li>Latitude column: Position</li>
+        </ul>
+        <h2>Google Web</h2>
+        <ul>
+          <li>Row datatype: Item</li>
+          <li>FromNodeId column: Link</li>
+          <li>ToNodeId column: Link</li>
+        </ul>
+        <h2>UFO</h2>
+        <ul>
+          <li>Row datatype: Item</li>
+          <li>Datetime: Attribute</li>
+          <ul>
+            <li>Attribute type: Quantitative Cyclic</li>
+          </ul>
+          <li>City: Attribute</li>
+          <ul>
+            <li>Attribute type: Categorical</li>
+          </ul>
+          <li>State: Attribute</li>
+          <ul>
+            <li>Attribute type: Categorical</li>
+          </ul>
+          <li>Country: Attribute</li>
+          <ul>
+            <li>Attribute type: Categorical</li>
+          </ul>
+          <li>Shape: Attribute</li>
+          <ul>
+            <li>Attribute type: Categorical</li>
+          </ul>
+          <li>Duration: Attribute</li>
+          <ul>
+            <li>Attribute type: Quantitative Sequential</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div id="task-abstraction">
+      <h1>Task Abstraction</h1>
+      <div id="column-container">
+        <div class="column">
+          <div class="image-container">
+            <img src="./img/vis1.png" alt="Visualization 1" />
+          </div>
+          The high level action of the viz is to analyze the daily maximum
+          temperature in Vancouver from 1979 to 2021 (existing data). The
+          mid-level action of the viz highlights the maximum temperature of the
+          last 3 days in Vancouver (at the time the viz was created). The viz
+          also shows the trend of maximum temperatures over the course of the
+          year. Low level: The user identifies the target of the last three days
+          and is able to compare this target to the rest of the data.
+        </div>
+        <div class="column">
+          <div class="image-container">
+            <img src="./img/vis2.png" alt="Visualization 2" />
+          </div>
+          The high level action of the viz is to consume existing data of the
+          number of times daily mean temperatures were 20 degrees Fahrenheit
+          above normal in both Seattle and Portland. Mid-level: The target of the viz is clear,
+          as each bar in the chart is highlighted in red, and dates with a value of 0 are not shown.
+          Low level: The user compares the target of Seattle to the target of Portland.
+        </div>
+      </div>
+    </div>
+    <div id="decoration">
+      <div id="svg-row">
+        <svg width="50" height="50">
+          <circle cx="25" cy="25" r="20" />
+        </svg>
+        <svg width="50" height="50">
+          <rect x="5" y="5" width="40" height="40" />
+        </svg>
+        <svg width="50" height="50">
+          <circle cx="25" cy="25" r="20" />
+        </svg>
+        <svg width="50" height="50">
+          <rect x="5" y="5" width="40" height="40" />
+        </svg>
+        <svg width="50" height="50">
+          <circle cx="25" cy="25" r="20" />
+        </svg>
+        <svg width="50" height="50">
+          <rect x="5" y="5" width="40" height="40" />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <h1>Acknowledgements</h1>
+      <div>
+        <ul>
+          <li>
+            https://www.w3schools.com/html/html_tables.asp
+          </li>
+          <li>
+            https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+          </li>
+          <li>
+            https://www.freecodecamp.org/news/svg-rectangle-and-other-svg-shapes/
+          </li>
+          <li>
+            https://www.w3schools.com/CSSref/sel_hover.php
+          </li>
+          <li>
+            https://stackoverflow.com/questions/14255631/style-svg-circle-with-css
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
