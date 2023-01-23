@@ -8,6 +8,21 @@ h1 {
 
 #table-header {
   color: blue;
+  background-color: lightblue;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+th {
+  border: 2px solid black;
+  padding: 5px;
 }
 
 #column-container {
